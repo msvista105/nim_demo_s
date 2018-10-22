@@ -89,7 +89,7 @@ public class MainActivity extends UI {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //是否设置手势密码
-        String isSecret = "true";//getSharedPreferences("Nim",Context.MODE_PRIVATE).getString("isSecret",null);
+        String isSecret = "false";//getSharedPreferences("Nim",Context.MODE_PRIVATE).getString("isSecret",null);
         if (!TextUtils.isEmpty(isSecret) && "true".equalsIgnoreCase(isSecret)) {
             LogUtil.i(TAG,"isSecret is true ");
             SecretActivity.start(this);
